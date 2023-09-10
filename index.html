@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="ndex.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Dcomtech</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Your Satisfaction</div>
+      <div class="sub_title"> Is our Mission</div>
+      <div class="btns">
+        <button id="set">Learn More</button>
+        <button id="set1">Subscribe</button>
+      </div>
+    </div>
+
+    <section class="section-plans" id="section-plans">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+        Our Plans
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-1">
+              <div class="card__title card__title--1">
+                <i class="fas fa-paper-plane"></i>
+                <h4 class="card__heading">Basic</h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>1 Website</li>
+                  <li>50 GB SSD Storage</li>
+                  <li>Unmetered Bandwidth</li>
+                  <li>Free SSL Certificate</li>
+                  <li>1 Included Domain</li>
+                  <li>1 Included Domain</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$2.95/mo*</p>
+                </div>
+                <a href="#popup" class="btn btn--white">Select</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-2">
+              <div class="card__title card__title--2">
+                <i class="fas fa-plane"></i>
+                <h4 class="card__heading">Plus</h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Includes Basic Package Features</li>
+                  <li>Unlimited Websites</li>
+                  <li>Unlimited SSD Storage</li>
+                  <li>Unlimited Domains</li>
+                  <li>Unlimited Parked Domains</li>
+                  <li>Unlimited Sub Domains</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$5.45/mo*</p>
+                </div>
+                <a href="#popup" class="btn btn--white">Select</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front-3">
+              <div class="card__title card__title--3">
+                <i class="fas fa-rocket"></i>
+                <h4 class="card__heading">Pro</h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Includes Plus Plan Features</li>
+                  <li>High Performance</li>
+                  <li>2 Spam Experts</li>
+                  <li>Free SSL Certificate</li>
+                  <li>Domain Privacy</li>
+                  <li>Site Backup - CodeGuard Basic</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$13.95/mo</p>
+                </div>
+                <a href="#popup" class="btn btn--white">Select</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn btn--green">Get Started</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Dcomtech. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+
+
+
+
+  <script>
+    const changeTextButton = document.getElementById('set');
+    const changeME = document.getElementById('set')
+    const titleElement1 = document.querySelector('.sub_title');
+    const titleElement = document.querySelector('.title');
+    const originalText = titleElement.textContent;
+    const originalText1 = titleElement1.textContent;
+
+    changeTextButton.addEventListener('mouseenter', function () {
+        titleElement.textContent = 'Take the first Step';
+    });
+
+    changeME.addEventListener('mouseenter', function () {
+        titleElement1.textContent = 'With Us';
+    });
+
+    changeTextButton.addEventListener('mouseleave', function () {
+        titleElement.textContent = originalText;
+    });
+
+
+    changeME.addEventListener('mouseleave', function () {
+        titleElement1.textContent = originalText1;
+    });
+
+
+    document.getElementById('set1').addEventListener('click', function () {
+        const subTitleElement = document.querySelector('.sub_title');
+        subTitleElement.style.color = 'blue';
+    });
+</script>
+</html>
